@@ -3,12 +3,7 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-div {
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-}
+
 .parallax-section {
     background-attachment: fixed;
     background-position: center;
