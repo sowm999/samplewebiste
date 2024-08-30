@@ -24,12 +24,12 @@ div {
 }
 
 #section1 {
-    background-image: url('black-background.jpg'); /* Replace with your image path */
+    background-image: url('background-1.jpg'); /* Replace with your image path */
     padding: 20px;
 }
 
 #section2 {
-    background-image: url('black-background.jpg'); /* Replace with your image path */
+    background-image: url('background-2.jpg'); /* Replace with your image path */
     padding: 20px;
 }
 
