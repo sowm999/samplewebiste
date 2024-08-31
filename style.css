@@ -3,9 +3,11 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 div{
     padding-bottom: 30px;
 }
+
 .parallax-section {
     background-attachment: fixed;
     background-position: center;
@@ -18,12 +20,19 @@ div{
     color: white;
 }
 
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
 #section1 {
     background-image: url('background-1.jpg');
 }
 
 #section2 {
-    background-image: url('background-1.jpg');
+    background-image: url('background-1.jpg'); 
 }
 
 .content-section {
@@ -38,7 +47,7 @@ div{
     font-size: 1.2em;
 }
 
-h1{
+h1 {
     font-family: "Lakki Reddy", serif;
     font-size: 100px; 
     letter-spacing: 2px; 
@@ -62,28 +71,34 @@ p1 {
 
 .spurpunk {
     display: block;
-    margin-bottom: 20px; /* Space above the Watch Trailer button */
 }
 
-/* Watch Trailer button styled to match "Come save the weird wild west!" */
-#watch-trailer-btn {
+p2 {
     font-family: "Mountains of Christmas", serif;
-    font-size: 40px;
+    font-size: 30px;
+    background-image: url('board.png');
+    background-size: 260px 100px; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    padding: 20px; 
+    display: block;
+    margin-top: 80px;
+}
+
+.trailer-button {
+    font-family: "Mountains of Christmas", serif;
+    font-size: 30px;
     color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
+    text-decoration: none;
+    background-image: url('board.png');
+    background-size: 260px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
     display: inline-block;
+    margin-top: 80px;
 }
 
-#watch-trailer-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly visible background on hover */
-}
-
-.video-container {
-    text-align: center;
-    margin: 20px 0;
+.trailer-button:hover {
+    opacity: 0.8;
 }
