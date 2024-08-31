@@ -16,9 +16,8 @@ div{
     align-items: center;
     justify-content: center;
     color: white;
-    
-
 }
+
 div {
   padding-top: 50px;
   padding-right: 30px;
@@ -27,14 +26,12 @@ div {
 }
 
 #section1 {
-     /* Replace with your image path */
-    background-image: url('background-1.jpg')
+    background-image: url('background-1.jpg');
 }
 
 #section2 {
-    background-image: url('background-1.jpg'); /* Replace with your image path */
+    background-image: url('background-1.jpg');
 }
-
 
 .content-section {
     background-color: #f1f1f1;
@@ -60,7 +57,7 @@ h1{
      3px -3px 20px #FFD700,  /* Yellow outer shadow (top-right) */
     -3px  3px 20px #FFD700,  /* Yellow outer shadow (bottom-left) */
      3px  3px 20px #FFD700;
-     margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 p1 {
@@ -71,7 +68,6 @@ p1 {
 }
 
 .spurpunk{
-    
     display: block;
 }
 
@@ -85,4 +81,29 @@ p2 {
     padding: 20px; 
     display: block;
     margin-top: 80px;
+}
+
+/* Updated Watch Trailer button */
+#watch-trailer-btn {
+    font-family: "Mountains of Christmas", serif;
+    font-size: 30px;
+    background-image: url('board.png');
+    background-size: 260px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    width: 260px; /* Same width as background button */
+    height: 100px; /* Same height as background button */
+    text-align: center; /* Center text in the button */
+    line-height: 60px; /* Vertically align text */
+    margin-bottom: 100px; /* Add space below the button */
+}
+
+#watch-trailer-btn:hover {
+    background-color: transparent; /* Maintain transparency on hover */
 }
