@@ -27,12 +27,12 @@ div {
 }
 
 #section1 {
-    ; /* Replace with your image path */
+     /* Replace with your image path */
     background-image: url('background-1.jpg')
 }
 
 #section2 {
-    background-image: url('background-2.jpg'); /* Replace with your image path */
+    background-image: url('background-1.jpg'); /* Replace with your image path */
 }
 
 
@@ -46,4 +46,43 @@ div {
     margin: 0 auto;
     width: 80%;
     font-size: 1.2em;
+}
+
+h1{
+    font-family: "Lakki Reddy", serif;
+    font-size: 100px; 
+    letter-spacing: 2px; 
+    text-shadow: 
+    -1px -1px 10px #2159ff,  /* Blue inner shadow (top-left) */
+     1px -1px 10px #2159ff,  /* Blue inner shadow (top-right) */
+    -1px  1px 10px #2159ff,  /* Blue inner shadow (bottom-right) */
+    -3px -3px 20px #FFD700,  /* Yellow outer shadow (top-left) */
+     3px -3px 20px #FFD700,  /* Yellow outer shadow (top-right) */
+    -3px  3px 20px #FFD700,  /* Yellow outer shadow (bottom-left) */
+     3px  3px 20px #FFD700;
+     margin-bottom: 0px;
+}
+
+p1 {
+    font-family: "Mountains of Christmas", serif;
+    font-size: 40px;
+    display: block; 
+    margin-bottom: 50px;
+}
+
+.spurpunk{
+    
+    display: block;
+}
+
+p2 {
+    font-family: "Mountains of Christmas", serif;
+    font-size: 30px;
+    background-image: url('board.png');
+    background-size: 260px 100px; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    padding: 20px; 
+    display: block;
+    margin-top: 80px;
 }
