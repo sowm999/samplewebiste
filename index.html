@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Spurpunk1</title>
+    <title> Spurpunk1 </title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,13 +15,8 @@
         <h1>SPURPUNK</h1>
         <p1>Come save the weird wild west!</p1>
         <img class="spurpunk" src="Spurpunk-image.png">
-        <p2><a href="#" class="trailer-button" onclick="playTrailer()">Watch Trailer</a></p2>
-        <div id="trailer-container" style="display: none; margin-top: 20px;">
-            <video id="spurpunk-trailer" width="80%" controls>
-                <source src="Spurpunk-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <p2><a href="https://youtu.be/GEHQamurmBI?si=O-1hkMFKuUIKCa1q" class="trailer-button" target="_blank">Watch Trailer</a></p2>
+
     </div>
     
     <div class="content-section">
@@ -42,14 +37,5 @@
         </a>
     </div>
     <!-- Add more parallax and content sections as needed -->
-
-    <script>
-        function playTrailer() {
-            var trailerContainer = document.getElementById('trailer-container');
-            var trailerVideo = document.getElementById('spurpunk-trailer');
-            trailerContainer.style.display = 'block';
-            trailerVideo.play();
-        }
-    </script>
 </body>
 </html>
