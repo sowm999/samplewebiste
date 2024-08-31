@@ -18,13 +18,6 @@ div{
     color: white;
 }
 
-div {
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-}
-
 #section1 {
     background-image: url('background-1.jpg');
 }
@@ -67,43 +60,30 @@ p1 {
     margin-bottom: 50px;
 }
 
-.spurpunk{
+.spurpunk {
     display: block;
+    margin-bottom: 20px; /* Space above the Watch Trailer button */
 }
 
-p2 {
-    font-family: "Mountains of Christmas", serif;
-    font-size: 30px;
-    background-image: url('board.png');
-    background-size: 260px 100px; 
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat;
-    padding: 20px; 
-    display: block;
-    margin-top: 80px;
-}
-
-/* Updated Watch Trailer button */
+/* Watch Trailer button styled to match "Come save the weird wild west!" */
 #watch-trailer-btn {
     font-family: "Mountains of Christmas", serif;
-    font-size: 30px;
-    background-image: url('board.png');
-    background-size: 260px 100px;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px;
-    border: none;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 20px;
-    display: block;
-    width: 260px; /* Same width as background button */
-    height: 100px; /* Same height as background button */
-    text-align: center; /* Center text in the button */
-    line-height: 60px; /* Vertically align text */
-    margin-bottom: 100px; /* Add space below the button */
+    display: inline-block;
 }
 
 #watch-trailer-btn:hover {
-    background-color: transparent; /* Maintain transparency on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly visible background on hover */
+}
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
 }
