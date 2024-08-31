@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Spurpunk1 </title>
+    <title>Spurpunk1</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,59 +15,15 @@
         <h1>SPURPUNK</h1>
         <p1>Come save the weird wild west!</p1>
         <img class="spurpunk" src="Spurpunk-image.png">
-        
-        <p2><a href="https://youtu.be/GEHQamurmBI?si=O-1hkMFKuUIKCa1q" class="trailer-button" target="_blank">Watch Trailer</a></p2>
-
+        <p2><a href="#" class="trailer-button" onclick="playTrailer()">Watch Trailer</a></p2>
+        <div id="trailer-container" style="display: none; margin-top: 20px;">
+            <video id="spurpunk-trailer" width="80%" controls>
+                <source src="Spurpunk-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
     
-    <div class="content-section">
-        <p>A 3D tower defense game with a Western twist</p><br/>
-        <p>You are the Spurpunk, using magical cards and automated defense towers to keep the monsters out of your ghost town. A fast-paced game of strategy, power, and the luck of the draw!</p>
-    </div>
-    <div class="parallax-section" id="section2">
-        <h1>LinkedIn Post</h1><br/>
-        <div>
-        <a href="https://www.linkedin.com/posts/sowmiya-mathanagopalan_hi-linkedin-community-please-check-out-the-activity-7231404889237561347-6rmz?utm_source=share&utm_medium=member_desktop">
-          <img src="Linkedin Post.png" width="400" height="500" />
-        </a>
-        </div>
-    </div>
-    <div class="content-section">
-        <p>A 3D tower defense game with a Western twist</p><br/>
-        <p>You are the Spurpunk, using magical cards and automated defense towers to keep the monsters out of your ghost town. A fast-paced game of strategy, power, and the luck of the draw!</p>
-    </div>
-    <div class="parallax-section" id="section2">
-        <h1>LinkedIn Post</h1><br/>
-        <div>
-        <a href="https://www.linkedin.com/posts/sowmiya-mathanagopalan_hi-linkedin-community-please-check-out-the-activity-7231404889237561347-6rmz?utm_source=share&utm_medium=member_desktop">
-          <img src="Linkedin Post.png" width="400" height="500" />
-        </a>
-        </div>
-    </div>
-    <div class="content-section">
-        <p>A 3D tower defense game with a Western twist</p><br/>
-        <p>You are the Spurpunk, using magical cards and automated defense towers to keep the monsters out of your ghost town. A fast-paced game of strategy, power, and the luck of the draw!</p>
-    </div>
-    <div class="parallax-section" id="section2">
-        <h1>LinkedIn Post</h1><br/>
-        <div>
-        <a href="https://www.linkedin.com/posts/sowmiya-mathanagopalan_hi-linkedin-community-please-check-out-the-activity-7231404889237561347-6rmz?utm_source=share&utm_medium=member_desktop">
-          <img src="Linkedin Post.png" width="400" height="500" />
-        </a>
-        </div>
-    </div>
-    <div class="content-section">
-        <p>A 3D tower defense game with a Western twist</p><br/>
-        <p>You are the Spurpunk, using magical cards and automated defense towers to keep the monsters out of your ghost town. A fast-paced game of strategy, power, and the luck of the draw!</p>
-    </div>
-    <div class="parallax-section" id="section2">
-        <h1>LinkedIn Post</h1><br/>
-        <div>
-        <a href="https://www.linkedin.com/posts/sowmiya-mathanagopalan_hi-linkedin-community-please-check-out-the-activity-7231404889237561347-6rmz?utm_source=share&utm_medium=member_desktop">
-          <img src="Linkedin Post.png" width="400" height="500" />
-        </a>
-        </div>
-    </div>
     <div class="content-section">
         <p>A 3D tower defense game with a Western twist</p><br/>
         <p>You are the Spurpunk, using magical cards and automated defense towers to keep the monsters out of your ghost town. A fast-paced game of strategy, power, and the luck of the draw!</p>
@@ -86,5 +42,14 @@
         </a>
     </div>
     <!-- Add more parallax and content sections as needed -->
+
+    <script>
+        function playTrailer() {
+            var trailerContainer = document.getElementById('trailer-container');
+            var trailerVideo = document.getElementById('spurpunk-trailer');
+            trailerContainer.style.display = 'block';
+            trailerVideo.play();
+        }
+    </script>
 </body>
 </html>
