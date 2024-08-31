@@ -15,10 +15,7 @@
         <h1>SPURPUNK</h1>
         <p1>Come save the weird wild west!</p1>
         <img class="spurpunk" src="Spurpunk-image.png">
-        
-        <!-- Watch Trailer button placed between image and content -->
-        <button id="watch-trailer-btn" class="watch-trailer-btn" onclick="playTrailer()">Watch Trailer</button>
-       
+        <p2><a href="https://youtu.be/GEHQamurmBI?si=O-1hkMFKuUIKCa1q" class="trailer-button">Watch Trailer</a></p2>
     </div>
     
     <div class="content-section">
@@ -38,22 +35,6 @@
           <img src="linkedin-icon.png" width="20" height="30">
         </a>
     </div>
-    
-    <!-- Hidden video container -->
-    <div class="video-container" id="video-container" style="display:none;">
-        <video id="trailer-video" controls style="width: 80%; max-width: 900px; margin: 20px auto;">
-            <source src="Spurpunk-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <script>
-        function playTrailer() {
-            var videoContainer = document.getElementById("video-container");
-            videoContainer.style.display = "block";
-            var video = document.getElementById("trailer-video");
-            video.play();
-        }
-    </script>
+    <!-- Add more parallax and content sections as needed -->
 </body>
 </html>
