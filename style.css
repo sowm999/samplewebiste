@@ -36,7 +36,7 @@ div {
 }
 
 .content-section {
-    background-color: #f1f1f1;
+    background-color: transparent;
     padding: 20px;
     text-align: center;
 }
@@ -49,7 +49,7 @@ div {
 
 h1 {
     font-family: "Lakki Reddy", serif;
-    font-size: 100px; 
+    font-size: 80px; 
     letter-spacing: 2px; 
     text-shadow: 
     -1px -1px 10px #2159ff,  /* Blue inner shadow (top-left) */
@@ -64,7 +64,7 @@ h1 {
 
 p1 {
     font-family: "Mountains of Christmas", serif;
-    font-size: 40px;
+    font-size: 30px;
     display: block; 
     margin-bottom: 50px;
 }
@@ -99,8 +99,95 @@ p2 {
     background-size: 300px 100px;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 50px;
+    margin-top: 20px;
     margin_bottom: 50px;
+}
+
+.trailer-button:hover {
+    opacity: 0.8;
+}
+
+
+header {
+    width: 100%;
+    height: 20px;
+    background-color: #441f00;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-left: auto;  
+    display: flex;
+    align-items: center;
+}
+
+body, .content-container {
+    background-color: #441f00; 
+}
+
+.content-section {
+    background-color: #441f00;
+    padding: 0px; 
+    max-width: 960px; 
+    margin: 20px auto; 
+    text-align: center; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.content-section p {
+    color: #ffffff; 
+    font-size: 18px; 
+    line-height: 1.6; 
+}
+
+.content-section p:first-of-type {
+    font-weight: bold; 
+    font-size: 20px; 
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 1200px; 
+
+    background-color: transparent; 
+}
+.gallery-item {
+   
+    margin: -35px; 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 4px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
 }
 
 .trailer-button:hover {
