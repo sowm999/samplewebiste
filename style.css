@@ -65,8 +65,8 @@ h1 {
 p1 {
     font-family: "Mountains of Christmas", serif;
     font-size: 30px;
-    display: block; 
-    margin-bottom: 50px;
+    display: block;
+    margin-bottom: 10px; /* Reduced space below the text */
 }
 
 .spurpunk {
@@ -196,6 +196,7 @@ body, .content-container {
     border: 5px solid #FFD700; /* Gold outline */
     display: inline-block;
     padding: 10px;
+    margin-top: 0; /* Ensure there's no extra space above the video */
 }
 
 video.spurpunk {
