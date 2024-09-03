@@ -24,11 +24,14 @@
     <div class="parallax-section" id="section1" align="center">
         <h1>SPURPUNK</h1>
         <p1>Come save the weird wild west!</p1>
-        <!-- Video Element replacing the image -->
-        <video class="spurpunk-video" controls autoplay loop playsinline>
-            <source src="Spurpunk-animated-motion-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <!-- Image and Video Wrapper -->
+        <div class="video-container">
+            <img id="spurpunk-image" src="Spurpunk-image.png" alt="Spurpunk Image" class="spurpunk-image">
+            <video id="spurpunk-video" class="spurpunk-video" muted>
+                <source src="Spurpunk-animated-motion-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
     
     <div class="content-section">
@@ -105,5 +108,23 @@
             <img src="g4.jpg" alt="Photo 4">
         </div>
     </div>
+
+    <script>
+        const image = document.getElementById('spurpunk-image');
+        const video = document.getElementById('spurpunk-video');
+
+        image.addEventListener('mouseover', function() {
+            video.play();
+            video.style.display = 'block';
+            image.style.display = 'none';
+        });
+
+        video.addEventListener('mouseout', function() {
+            video.pause();
+            video.style.display = 'none';
+            image.style.display = 'block';
+        });
+    </script>
+
 </body>
 </html>
