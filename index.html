@@ -24,8 +24,8 @@
     <div class="parallax-section" id="section1" align="center">
         <h1>SPURPUNK</h1>
         <p1>Come save the weird wild west!</p1>
-        <!-- Always Visible Video Element -->
-        <video id="spurpunk-video" class="spurpunk-video" muted>
+        <!-- Video Element -->
+        <video id="spurpunk-video" class="spurpunk-video">
             <source src="Spurpunk-animated-motion-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -69,17 +69,6 @@
     <div class="content-section">
         <p>Some other content3</p>
     </div>
-    <div class="parallax-section" id="section2" align="center">
-        <p1>Tiktok Post</p1><br/>
-        <div>
-        <a href="https://www.tiktok.com/@preranacheguru1/video/7402141912754392363?_r=1&_t=8osIWz1tx66&utm_source=tiktok&utm_medium=social&utm_campaign=spurpunk_update_announcement" class="pink-button" target="_blank">
-          <img src="Tiktok.png" width="400" height="500" />
-        </a>
-        </div>
-    </div>
-    <div class="content-section">
-        <p>Some other content3</p>
-    </div>
     <div class="photo-gallery">
         <div class="gallery-item">
             <img src="g1.jpg" alt="Photo 1">
@@ -99,6 +88,7 @@
         const video = document.getElementById('spurpunk-video');
 
         video.addEventListener('mouseover', function() {
+            video.muted = false; // Unmute the video
             video.play();
         });
 
