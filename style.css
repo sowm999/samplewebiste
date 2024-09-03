@@ -62,11 +62,12 @@ h1 {
     margin-bottom: 0px;
 }
 
-p1 {
+.subtitle {
     font-family: "Mountains of Christmas", serif;
     font-size: 30px;
+    margin: 20px 0; /* Adds space above and below the subtitle */
     display: block;
-    margin-bottom: 10px; /* Reduced space below the text */
+    text-align: center;
 }
 
 .spurpunk {
