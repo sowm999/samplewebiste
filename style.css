@@ -67,6 +67,8 @@ p1 {
     font-size: 30px;
     display: block; 
     margin-bottom: 50px;
+    margin-bottom: 100px; /* Increase the bottom margin for more space */
+
 }
 
 .spurpunk {
