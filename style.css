@@ -36,7 +36,7 @@ div {
 }
 
 .content-section {
-    background-color: transparent;
+    background-color: #441f00;
     padding: 20px;
     text-align: center;
 }
@@ -45,6 +45,7 @@ div {
     margin: 0 auto;
     width: 80%;
     font-size: 1.2em;
+    color: #ffffff;
 }
 
 h1 {
@@ -69,15 +70,19 @@ p1 {
     margin-bottom: 50px;
 }
 
-.spurpunk {
-    display: block;
+.spurpunk-video {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 p2 {
     font-family: "Mountains of Christmas", serif;
     font-size: 40px;
     display: block;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .trailer-button {
@@ -100,13 +105,11 @@ p2 {
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 20px;
-    margin_bottom: 50px;
 }
 
 .trailer-button:hover {
     opacity: 0.8;
 }
-
 
 header {
     width: 100%;
@@ -174,11 +177,10 @@ body, .content-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     max-width: 1200px; 
-
     background-color: transparent; 
 }
+
 .gallery-item {
-   
     margin: -35px; 
 }
 
@@ -187,9 +189,4 @@ body, .content-container {
     height: auto;
     border-radius: 4px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
-}
-
-.trailer-button:hover {
-    opacity: 0.8;
 }
