@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Spurpunk1</title>
+    <title> Spurpunk1 </title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,37 +24,30 @@
     <div class="parallax-section" id="section1" align="center">
         <h1>SPURPUNK</h1>
         <p1>Come save the weird wild west!</p1>
-        
-        <!-- Video replacement with hover effect -->
-        <div class="video-container">
-            <video id="spurpunk-video" class="spurpunk" src="Spurpunk-animated-motion-video.mp4" width="800" height="600"></video>
-        </div>
-
-        <!-- Adding the bold and normal text under the video with same style as "Come save the weird wild west!" -->
-        <div class="content-section" style="margin-top: 20px;">
-            <p1>A 3D tower defense game with a Western twist</p1><br/>
-            <p1>You are the Spurpunk, using magical cards and automated defense towers to keep the monsters out of your ghost town.</p1>
-        </div>
-        
-        <!-- Watch Trailer button directly under the video -->
-        <p2><a href="#" id="trailer-button" class="trailer-button">Watch Trailer</a></p2>
-
-        <!-- LinkedIn Post text under Watch Trailer button -->
-        <div class="content-section" style="margin-top: 20px;">
-            <p1>LinkedIn Post</p1>
-        </div>
+        <!-- Video Element replacing the image -->
+        <video class="spurpunk-video" autoplay muted loop playsinline>
+            <source src="Spurpunk-animated-motion-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
     
-    <!-- Adding space before LinkedIn Post image -->
-    <div class="parallax-section" id="section2" align="center" style="margin-top: 20px;">
+    <div class="content-section">
+        <p>A 3D tower defense game with a Western twist</p><br/>
+        <p>You are the Spurpunk, using magical cards and automated defense towers to keep the monsters out of your ghost town. A fast-paced game of strategy, power, and the luck of the draw!</p>
+    </div>
+    
+    <div class="parallax-section" id="section2" align="center">
+        <p1>LinkedIn Post</p1><br/>
         <div>
-            <a href="https://www.linkedin.com/posts/sowmiya-mathanagopalan_hi-linkedin-community-please-check-out-the-activity-7231404889237561347-6rmz?utm_source=share&utm_medium=member_desktop">
-              <img src="Linkedin Post.png" width="400" height="500" />
-            </a>
+        <a href="https://www.linkedin.com/posts/sowmiya-mathanagopalan_hi-linkedin-community-please-check-out-the-activity-7231404889237561347-6rmz?utm_source=share&utm_medium=member_desktop">
+          <img src="Linkedin Post.png" width="400" height="500" />
+        </a>
         </div>
     </div>
-
-    <div class="parallax-section" id="section2" align="center">
+    <div class="content-section">
+        <p>Mini video with game description</p>
+    </div>
+    <div class="parallax-section" id="section2">
         <p1>Twitter Post</p1><br/>
         <div>
         <a href="https://x.com/francesca_53840/status/1826164880476450902">
@@ -62,7 +55,9 @@
         </a>
         </div>
     </div>
-
+    <div class="content-section">
+        <p>Some other content2</p>
+    </div>
     <div class="parallax-section" id="section2" align="center">
         <p1>Youtube Post</p1><br/>
         <div>
@@ -71,7 +66,9 @@
         </a>
         </div>
     </div>
-
+    <div class="content-section">
+        <p>Some other content3</p>
+    </div>
     <div class="parallax-section" id="section2" align="center">
         <p1>Tiktok Post</p1><br/>
         <div>
@@ -80,7 +77,9 @@
         </a>
         </div>
     </div>
-
+    <div class="content-section">
+        <p>Some other content3</p>
+    </div>
     <div class="parallax-section" id="section2" align="center">
         <p1>Facebook Post</p1><br/>
         <div>
@@ -89,7 +88,6 @@
         </a>
         </div>
     </div>
-
     <div class="content-section">
         <p>Gallery</p>
     </div>
@@ -107,9 +105,5 @@
             <img src="g4.jpg" alt="Photo 4">
         </div>
     </div>
-    <!-- Add more parallax and content sections as needed -->
 </body>
-
-<!-- Include JavaScript for interactions -->
-<script src="script.js"></script>
 </html>
