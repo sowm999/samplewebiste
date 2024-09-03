@@ -78,6 +78,17 @@ p1 {
     background-color: #000; /* Background color for video */
     padding: 10px; /* Padding for the outline */
     border: 5px solid #FFD700; /* Gold outline */
+    box-shadow: 0 0 20px
+}
+
+.video-container {
+    position: relative;
+    width: 70%; /* Medium size */
+    max-width: 800px; /* Max width */
+    margin: 0 auto; /* Center video */
+    background-color: #000; /* Background color for video */
+    padding: 10px; /* Padding for the outline */
+    border: 5px solid #FFD700; /* Gold outline */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Attractive shadow */
     border-radius: 10px; /* Rounded corners */
 }
