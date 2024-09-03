@@ -24,11 +24,13 @@
     <div class="parallax-section" id="section1" align="center">
         <h1>SPURPUNK</h1>
         <p1>Come save the weird wild west!</p1>
-        <!-- Video Element -->
-        <video id="spurpunk-video" class="spurpunk-video">
+        <video id="spurpunk-video" class="spurpunk" width="400" height="300" loop muted>
             <source src="Spurpunk-animated-motion-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        
+        <p2><a href="https://youtu.be/GEHQamurmBI?si=O-1hkMFKuUIKCa1q" class="trailer-button" target="_blank">Watch Trailer</a></p2>
+
     </div>
     
     <div class="content-section">
@@ -69,6 +71,33 @@
     <div class="content-section">
         <p>Some other content3</p>
     </div>
+    <div class="parallax-section" id="section2" align="center">
+        <p1>Tiktok Post</p1><br/>
+        <div>
+        <a href="https://www.tiktok.com/@preranacheguru1/video/7402141912754392363?_r=1&_t=8osIWz1tx66&utm_source=tiktok&utm_medium=social&utm_campaign=spurpunk_update_announcement" class="pink-button" target="_blank">
+          <img src="Tiktok.png" width="400" height="500" />
+        </a>
+        </div>
+    </div>
+    <div class="content-section">
+        <p>Some other content3</p>
+    </div>
+    <div class="parallax-section" id="section2" align="center">
+        <p1>Facebook Post</p1><br/>
+        <div>
+        <a href="https://www.facebook.com/100021499664938/posts/pfbid02swDWoy1AJCm6cvn1ezeT3Smy94D6K3yKNQKQRFpPWPiHHJHZpR2w5tGcyT5Epts3l/?mibextid=6yaNxA">  
+        <img src="Facebook.png" width="700" height="500" />
+        </a>
+        </div>
+    </div>
+    <!-- <div class="content-section">
+        <a href="https://www.linkedin.com/company/easley-dunn-productions/posts/?feedView=all">
+          <img src="linkedin-icon.png" width="20" height="30">
+        </a>
+    </div> -->
+    <div class="content-section">
+        <p>Gallery</p>
+    </div>
     <div class="photo-gallery">
         <div class="gallery-item">
             <img src="g1.jpg" alt="Photo 1">
@@ -83,19 +112,20 @@
             <img src="g4.jpg" alt="Photo 4">
         </div>
     </div>
+    <!-- Add more parallax and content sections as needed -->
 
     <script>
         const video = document.getElementById('spurpunk-video');
+        const section = document.querySelector('.parallax-section');
 
-        video.addEventListener('mouseover', function() {
-            video.muted = false; // Unmute the video
+        section.addEventListener('mouseover', function() {
             video.play();
         });
 
-        video.addEventListener('mouseout', function() {
+        section.addEventListener('mouseout', function() {
             video.pause();
+            video.currentTime = 0; // Reset video to start
         });
     </script>
-
 </body>
 </html>
