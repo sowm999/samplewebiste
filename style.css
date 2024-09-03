@@ -67,7 +67,7 @@ p1 {
     font-family: "Mountains of Christmas", serif;
     font-size: 30px;
     display: block; 
-    margin-bottom: 5px; /* Further reduced the margin-bottom */
+    margin-bottom: 2px; /* Further reduced the margin-bottom */
 }
 
 .video-container {
