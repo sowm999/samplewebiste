@@ -67,7 +67,7 @@ h1 {
     font-size: 40px;
     display: block;
     margin-top: 0px; /* Removed space above the text */
-    margin-bottom: 20px; /* Reduced space below the subtitle */
+    margin-bottom: 10px; /* Reduced space below the subtitle */
     text-align: center;
 }
 
