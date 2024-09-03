@@ -1,39 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const video = document.getElementById('spurpunk-video');
-    const modal = document.getElementById('trailer-modal');
     const trailerButton = document.getElementById('trailer-button');
+    const trailerModal = document.getElementById('trailer-modal');
     const closeButton = document.querySelector('.close-button');
+    const trailerVideo = document.getElementById('trailer-video');
 
-    // Play video on hover with sound
-    video.addEventListener('mouseenter', function () {
-        video.muted = false;
-        video.play();
-    });
-
-    video.addEventListener('mouseleave', function () {
-        video.pause();
-        video.currentTime = 0;
-    });
-
-    // Modal functionality
+    // Show the modal and play the trailer video when the button is clicked
     trailerButton.addEventListener('click', function (e) {
         e.preventDefault();
-        modal.style.display = 'block';
-        const trailerVideo = document.getElementById('trailer-video');
+        trailerModal.style.display = 'block';
         trailerVideo.play();
     });
 
+    // Close the modal when the close button is clicked
     closeButton.addEventListener('click', function () {
-        modal.style.display = 'none';
-        const trailerVideo = document.getElementById('trailer-video');
+        trailerModal.style.display = 'none';
         trailerVideo.pause();
         trailerVideo.currentTime = 0;
     });
 
+    // Close the modal when clicking outside the video
     window.addEventListener('click', function (event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-            const trailerVideo = document.getElementById('trailer-video');
+        if (event.target === trailerModal) {
+            trailerModal.style.display = 'none';
             trailerVideo.pause();
             trailerVideo.currentTime = 0;
         }
