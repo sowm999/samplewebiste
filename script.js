@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const trailerModal = document.getElementById('trailer-modal');
     const closeButton = document.querySelector('.close-button');
     const trailerVideo = document.getElementById('trailer-video');
+    const spurpunkVideo = document.getElementById('spurpunk-video');
 
     // Show the modal and play the trailer video when the button is clicked
     trailerButton.addEventListener('click', function (e) {
@@ -25,5 +26,16 @@ document.addEventListener('DOMContentLoaded', function () {
             trailerVideo.pause();
             trailerVideo.currentTime = 0;
         }
+    });
+
+    // Play video with sound on hover
+    spurpunkVideo.addEventListener('mouseenter', function () {
+        spurpunkVideo.muted = false; // Ensure sound is on
+        spurpunkVideo.play();
+    });
+
+    // Pause video when mouse leaves the video area
+    spurpunkVideo.addEventListener('mouseleave', function () {
+        spurpunkVideo.pause();
     });
 });
