@@ -67,7 +67,7 @@ p1 {
     font-family: "Mountains of Christmas", serif;
     font-size: 30px;
     display: block; 
-    margin-bottom: 50px;
+    margin-bottom: 20px; /* Reduced the margin-bottom to decrease the space */
 }
 
 .video-container {
@@ -78,7 +78,8 @@ p1 {
     background-color: #000; /* Background color for video */
     padding: 10px; /* Padding for the outline */
     border: 5px solid #FFD700; /* Gold outline */
-    box-shadow: 0 0 20px
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Attractive shadow */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .video-container {
