@@ -199,7 +199,7 @@ body, .content-container {
     border: 5px solid #FFD700; /* Gold outline */
     display: inline-block;
     padding: 10px;
-    margin-bottom: 20px; /* Reduced space below the video */
+    margin-bottom: 15px; /* Reduced space below the video */
 }
 
 video.spurpunk {
