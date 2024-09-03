@@ -59,7 +59,7 @@ h1 {
      3px -3px 20px #FFD700,  /* Yellow outer shadow (top-right) */
     -3px  3px 20px #FFD700,  /* Yellow outer shadow (bottom-left) */
      3px  3px 20px #FFD700;
-    margin-bottom: 10px; /* Reduced space below the title */
+    margin-bottom: 5px; /* Reduced space below the title */
 }
 
 .subtitle {
