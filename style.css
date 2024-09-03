@@ -35,19 +35,6 @@ div {
     background-image: url('background-1.jpg'); 
 }
 
-.content-section {
-    background-color: #441f00;
-    padding: 20px;
-    text-align: center;
-}
-
-.content-section p {
-    margin: 0 auto;
-    width: 80%;
-    font-size: 1.2em;
-    color: #ffffff;
-}
-
 h1 {
     font-family: "Lakki Reddy", serif;
     font-size: 80px; 
@@ -60,26 +47,14 @@ h1 {
      3px -3px 20px #FFD700,  /* Yellow outer shadow (top-right) */
     -3px  3px 20px #FFD700,  /* Yellow outer shadow (bottom-left) */
      3px  3px 20px #FFD700;
-    margin-bottom: 0px;
+    margin-bottom: 10px; /* Reduced space below the headline */
 }
 
 p1 {
     font-family: "Mountains of Christmas", serif;
     font-size: 30px;
     display: block; 
-    margin-bottom: 2px; /* Further reduced the margin-bottom */
-}
-
-.video-container {
-    position: relative;
-    width: 70%; /* Medium size */
-    max-width: 800px; /* Max width */
-    margin: 0 auto; /* Center video */
-    background-color: #000; /* Background color for video */
-    padding: 10px; /* Padding for the outline */
-    border: 5px solid #FFD700; /* Gold outline */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Attractive shadow */
-    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px; /* Further reduced margin */
 }
 
 .video-container {
