@@ -77,7 +77,8 @@ p2 {
     font-family: "Mountains of Christmas", serif;
     font-size: 40px;
     display: block;
-    margin-top: 80px;
+    margin-top: 20px; /* Adjust this to reduce the space above */
+    margin-bottom: 80px; /* Increased space below the text */
 }
 
 .trailer-button {
