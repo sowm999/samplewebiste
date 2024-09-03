@@ -47,14 +47,14 @@ h1 {
      3px -3px 20px #FFD700,  /* Yellow outer shadow (top-right) */
     -3px  3px 20px #FFD700,  /* Yellow outer shadow (bottom-left) */
      3px  3px 20px #FFD700;
-    margin-bottom: 10px; /* Reduced space below the headline */
+    margin-bottom: 5px; /* Further reduced space below the headline */
 }
 
 p1 {
     font-family: "Mountains of Christmas", serif;
     font-size: 30px;
     display: block; 
-    margin-bottom: 10px; /* Further reduced margin */
+    margin: 0; /* Removed margin to bring text closer to the video */
 }
 
 .video-container {
