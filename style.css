@@ -69,8 +69,15 @@ p1 {
     margin-bottom: 50px;
 }
 
-.spurpunk {
+.spurpunk-video {
+    width: 600px;
+    height: auto;
+    border: 5px solid #FFD700; /* Gold border */
+    box-shadow: 0 0 15px #2159ff; /* Blue glow */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
     display: block;
+    margin: 0 auto;
 }
 
 p2 {
@@ -189,62 +196,6 @@ body, .content-container {
    
 }
 
-/* Additional styles for video and modal */
-.video-container {
-    position: relative;
-    background-color: #000; /* Background color */
-    border: 5px solid #FFD700; /* Gold outline */
-    display: inline-block;
-    padding: 10px;
-}
-
-video.spurpunk {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    transition: all 0.3s ease;
-}
-
-.video-container:hover video {
-    autoplay: true;
-    opacity: 0.9;
-}
-
-/* Modal styling */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.modal-content {
-    margin: 15% auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 800px;
-}
-
-.close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-button:hover,
-.close-button:focus {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Adjusting margins to prevent overlap */
-.content-section, .parallax-section {
-    margin-bottom: 20px;
+.trailer-button:hover {
+    opacity: 0.8;
 }
