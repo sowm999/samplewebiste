@@ -25,7 +25,7 @@
         <h1>SPURPUNK</h1>
         <p1>Come save the weird wild west!</p1>
         <div class="video-container">
-            <video class="spurpunk-video" playsinline autoplay>
+            <video class="spurpunk-video" autoplay muted id="spurpunkVideo">
                 <source src="Spurpunk-animated-motion-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -108,5 +108,13 @@
             <img src="g4.jpg" alt="Photo 4">
         </div>
     </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var video = document.getElementById('spurpunkVideo');
+            video.muted = false;
+            video.play();
+        });
+    </script>
 </body>
 </html>
