@@ -67,8 +67,6 @@ p1 {
     font-size: 30px;
     display: block; 
     margin-bottom: 50px;
-    margin-bottom: 100px; /* Increase the bottom margin for more space */
-
 }
 
 .spurpunk {
@@ -102,7 +100,7 @@ p2 {
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 20px;
-    margin_bottom: 50px;
+    margin-bottom: 50px; /* Added space below the Watch Trailer button */
 }
 
 .trailer-button:hover {
@@ -249,4 +247,16 @@ video.spurpunk {
 /* Adjusting margins to prevent overlap */
 .content-section, .parallax-section {
     margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 50px; /* Space below the game description */
+}
+
+.trailer-button {
+    margin-bottom: 50px; /* Space below the Watch Trailer button */
+}
+
+.parallax-section {
+    margin-bottom: 50px; /* Space below the LinkedIn Post */
 }
