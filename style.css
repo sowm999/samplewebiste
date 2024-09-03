@@ -69,26 +69,15 @@ p1 {
     margin-bottom: 50px;
 }
 
-.video-container {
-    position: relative;
-    width: 75%; /* Larger size */
-    margin: 0 auto;
-}
-
-.spurpunk-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .spurpunk-video {
-    width: 100%;
+    width: 90%; /* Large size */
     height: auto;
     border: 5px solid #FFD700; /* Gold border */
     box-shadow: 0 0 15px #2159ff; /* Blue glow */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     border-radius: 10px; /* Rounded corners */
-    display: none;
+    display: block;
+    margin: 0 auto;
 }
 
 p2 {
