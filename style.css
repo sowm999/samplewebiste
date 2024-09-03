@@ -47,7 +47,7 @@ h1 {
      3px -3px 20px #FFD700,  /* Yellow outer shadow (top-right) */
     -3px  3px 20px #FFD700,  /* Yellow outer shadow (bottom-left) */
      3px  3px 20px #FFD700;
-    margin-bottom: 5px; /* Further reduced space below the headline */
+    margin-bottom: 2px; /* Further reduced space below the headline */
 }
 
 p1 {
