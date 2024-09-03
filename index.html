@@ -24,14 +24,11 @@
     <div class="parallax-section" id="section1" align="center">
         <h1>SPURPUNK</h1>
         <p1>Come save the weird wild west!</p1>
-        <!-- Image and Video Wrapper -->
-        <div class="video-container">
-            <img id="spurpunk-image" src="Spurpunk-image.png" alt="Spurpunk Image" class="spurpunk-image">
-            <video id="spurpunk-video" class="spurpunk-video" muted>
-                <source src="Spurpunk-animated-motion-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <!-- Always Visible Video Element -->
+        <video id="spurpunk-video" class="spurpunk-video" muted>
+            <source src="Spurpunk-animated-motion-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
     
     <div class="content-section">
@@ -83,17 +80,6 @@
     <div class="content-section">
         <p>Some other content3</p>
     </div>
-    <div class="parallax-section" id="section2" align="center">
-        <p1>Facebook Post</p1><br/>
-        <div>
-        <a href="https://www.facebook.com/100021499664938/posts/pfbid02swDWoy1AJCm6cvn1ezeT3Smy94D6K3yKNQKQRFpPWPiHHJHZpR2w5tGcyT5Epts3l/?mibextid=6yaNxA">  
-        <img src="Facebook.png" width="700" height="500" />
-        </a>
-        </div>
-    </div>
-    <div class="content-section">
-        <p>Gallery</p>
-    </div>
     <div class="photo-gallery">
         <div class="gallery-item">
             <img src="g1.jpg" alt="Photo 1">
@@ -110,19 +96,14 @@
     </div>
 
     <script>
-        const image = document.getElementById('spurpunk-image');
         const video = document.getElementById('spurpunk-video');
 
-        image.addEventListener('mouseover', function() {
+        video.addEventListener('mouseover', function() {
             video.play();
-            video.style.display = 'block';
-            image.style.display = 'none';
         });
 
         video.addEventListener('mouseout', function() {
             video.pause();
-            video.style.display = 'none';
-            image.style.display = 'block';
         });
     </script>
 
