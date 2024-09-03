@@ -70,7 +70,7 @@ p1 {
 }
 
 .spurpunk-video {
-    width: 90%; /* Large size */
+    width: 80%; /* Slightly smaller size */
     height: auto;
     border: 5px solid #FFD700; /* Gold border */
     box-shadow: 0 0 15px #2159ff; /* Blue glow */
