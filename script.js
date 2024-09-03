@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const trailerButton = document.getElementById('trailer-button');
     const closeButton = document.querySelector('.close-button');
 
-    // Play video on hover
+    // Play video on hover with sound
     video.addEventListener('mouseenter', function () {
+        video.muted = false;
         video.play();
     });
 
