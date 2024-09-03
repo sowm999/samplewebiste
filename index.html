@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Spurpunk1 </title>
+    <title>Spurpunk1</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,12 +24,13 @@
     <div class="parallax-section" id="section1" align="center">
         <h1>SPURPUNK</h1>
         <p1>Come save the weird wild west!</p1>
-        <video id="spurpunk-video" class="spurpunk" width="400" height="300" loop muted>
-            <source src="Spurpunk-animated-motion-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
         
-        <p2><a href="https://youtu.be/GEHQamurmBI?si=O-1hkMFKuUIKCa1q" class="trailer-button" target="_blank">Watch Trailer</a></p2>
+        <!-- Video replacement with hover effect -->
+        <div class="video-container">
+            <video id="spurpunk-video" class="spurpunk" src="Spurpunk-animated-motion-video.mp4" width="800" height="600"></video>
+        </div>
+        
+        <p2><a href="#" id="trailer-button" class="trailer-button">Watch Trailer</a></p2>
 
     </div>
     
@@ -37,19 +38,28 @@
         <p>A 3D tower defense game with a Western twist</p><br/>
         <p>You are the Spurpunk, using magical cards and automated defense towers to keep the monsters out of your ghost town. A fast-paced game of strategy, power, and the luck of the draw!</p>
     </div>
-    
-    <div class="parallax-section" id="section2" align="center">
-        <p1>LinkedIn Post</p1><br/>
-        <div>
-        <a href="https://www.linkedin.com/posts/sowmiya-mathanagopalan_hi-linkedin-community-please-check-out-the-activity-7231404889237561347-6rmz?utm_source=share&utm_medium=member_desktop">
-          <img src="Linkedin Post.png" width="400" height="500" />
-        </a>
+
+    <!-- Modal for Trailer Video -->
+    <div id="trailer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <video controls id="trailer-video">
+                <source src="Spurpunk-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </div>
-    <div class="content-section">
-        <p>Mini video with game description</p>
+
+    <div class="parallax-section" id="section2" align="center">
+        <div>
+            <a href="https://www.linkedin.com/posts/sowmiya-mathanagopalan_hi-linkedin-community-please-check-out-the-activity-7231404889237561347-6rmz?utm_source=share&utm_medium=member_desktop">
+              <img src="Linkedin Post.png" width="400" height="500" />
+            </a>
+        </div>
+        <p1>LinkedIn Post</p1><br/>
     </div>
-    <div class="parallax-section" id="section2">
+
+    <div class="parallax-section" id="section2" align="center">
         <p1>Twitter Post</p1><br/>
         <div>
         <a href="https://x.com/francesca_53840/status/1826164880476450902">
@@ -57,9 +67,7 @@
         </a>
         </div>
     </div>
-    <div class="content-section">
-        <p>Some other content2</p>
-    </div>
+
     <div class="parallax-section" id="section2" align="center">
         <p1>Youtube Post</p1><br/>
         <div>
@@ -68,9 +76,7 @@
         </a>
         </div>
     </div>
-    <div class="content-section">
-        <p>Some other content3</p>
-    </div>
+
     <div class="parallax-section" id="section2" align="center">
         <p1>Tiktok Post</p1><br/>
         <div>
@@ -79,9 +85,7 @@
         </a>
         </div>
     </div>
-    <div class="content-section">
-        <p>Some other content3</p>
-    </div>
+
     <div class="parallax-section" id="section2" align="center">
         <p1>Facebook Post</p1><br/>
         <div>
@@ -90,11 +94,7 @@
         </a>
         </div>
     </div>
-    <!-- <div class="content-section">
-        <a href="https://www.linkedin.com/company/easley-dunn-productions/posts/?feedView=all">
-          <img src="linkedin-icon.png" width="20" height="30">
-        </a>
-    </div> -->
+
     <div class="content-section">
         <p>Gallery</p>
     </div>
@@ -113,19 +113,8 @@
         </div>
     </div>
     <!-- Add more parallax and content sections as needed -->
-
-    <script>
-        const video = document.getElementById('spurpunk-video');
-        const section = document.querySelector('.parallax-section');
-
-        section.addEventListener('mouseover', function() {
-            video.play();
-        });
-
-        section.addEventListener('mouseout', function() {
-            video.pause();
-            video.currentTime = 0; // Reset video to start
-        });
-    </script>
 </body>
+
+<!-- Include JavaScript for interactions -->
+<script src="script.js"></script>
 </html>
