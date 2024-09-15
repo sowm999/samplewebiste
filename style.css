@@ -1,0 +1,255 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    background-image: url('background-1.jpg');
+}
+
+
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+.content-section {
+    background-color: transparent;
+    text-align: center;
+}
+
+.content-section p {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-family: "Lakki Reddy", serif;
+    font-size: 80px; 
+    letter-spacing: 2px; 
+    text-shadow: 
+    -1px -1px 10px #2159ff,  /* Blue inner shadow (top-left) */
+     1px -1px 10px #2159ff,  /* Blue inner shadow (top-right) */
+    -1px  1px 10px #2159ff,  /* Blue inner shadow (bottom-right) */
+    -3px -3px 20px #FFD700,  /* Yellow outer shadow (top-left) */
+     3px -3px 20px #FFD700,  /* Yellow outer shadow (top-right) */
+    -3px  3px 20px #FFD700,  /* Yellow outer shadow (bottom-left) */
+     3px  3px 20px #FFD700;
+    margin-bottom: 5px; /* Reduced space below the title */
+    margin-top: 5px;
+}
+
+.subtitle {
+    font-family: "Mountains of Christmas", serif;
+    font-size: 40px;
+    display: block;
+    margin-top: 0px; /* Removed space above the text */
+    margin-bottom: 5px; /* Reduced space below the subtitle */
+    text-align: center;
+}
+
+.spurpunk {
+    display: block;
+}
+
+p2 {
+    font-family: "Mountains of Christmas", serif;
+    font-size: 40px;
+    display: block;
+    margin-top: 20px; /* Adjust this to reduce the space above */
+    margin-bottom: 80px; /* Increased space below the text */
+}
+
+.trailer-button {
+    font-family: "Mountains of Christmas", serif;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    text-shadow: 
+    -1px -1px 5px #2159ff,  /* Blue inner shadow (top-left) */
+     1px -1px 5px #2159ff,  /* Blue inner shadow (top-right) */
+    -1px  1px 5px #2159ff,  /* Blue inner shadow (bottom-right) */
+    -3px -3px 10px #FFD700,  /* Yellow outer shadow (top-left) */
+     3px -3px 10px #FFD700,  /* Yellow outer shadow (top-right) */
+    -3px  3px 10px #FFD700,  /* Yellow outer shadow (bottom-left) */
+     3px  3px 10px #FFD700;
+    background-image: url('board.png');
+    background-size: 300px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Added space below the Watch Trailer button */
+}
+
+.trailer-button:hover {
+    opacity: 0.8;
+}
+
+header {
+    background-color: transparent;
+    padding-top: 20px;
+    padding-right: 30px;
+    margin-top: 0px;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: flex-end; /* Aligns the icons to the right */
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.social-links img {
+    width: 45px;  /* Set width */
+    height: 45px; /* Set height */
+    margin-right: 20px;
+    transition: transform 0.5s ease;
+}
+.social-links img.spin-on-hover:hover {
+    animation: spin 1s forwards; /* Adjust duration as needed */
+}
+
+
+
+.content-section {
+    background-color: #441f00;
+    padding: 0px; 
+    max-width: 1000px; 
+    margin: 0px auto; 
+    text-align: center; 
+    font-family: 'Verdana'; 
+    border-radius: 10px;
+}
+
+.content-section p {
+    color: #ffffff; 
+    font-size: 15px; 
+    line-height: 1.8; 
+    margin: 10px auto; 
+}
+
+.content-section p:first-of-type {
+    font-weight: bold; 
+    font-size: 18px; 
+
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 1200px; 
+    margin: 0 auto;
+    background-color: transparent; 
+}
+
+.gallery-item {
+    margin: 15px; 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 4px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for video and modal */
+.video-container {
+    position: relative;
+    background-color: #000; /* Background color */
+    border: 5px solid #FFD700; /* Gold outline */
+    display: inline-block;
+    padding: 10px;
+    margin-top: 0; /* Ensure there's no extra space above the video */
+}
+
+video.spurpunk {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.video-container:hover video {
+    autoplay: true;
+    opacity: 0.9;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Adjusting margins to prevent overlap */
+.content-section, .parallax-section {
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 50px; /* Space below the game description */
+}
+
+.trailer-button {
+    margin-bottom: 50px; /* Space below the Watch Trailer button */
+}
+
+.parallax-section {
+    margin-bottom: 50px; /* Space below the LinkedIn Post */
+}
+
+.jump-effect {
+    transition: transform 0.8s ease;
+}
+
+.jump {
+    transform: translateY(-70px); /* Adjust the jump distance */
+}
