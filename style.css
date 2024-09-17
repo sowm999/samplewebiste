@@ -254,7 +254,8 @@ video.spurpunk {
     transform: translateY(-70px); /* Adjust the jump distance */
 }
 .email-signup {
-    text-align: center;  
+    text-align: center;
+    font-family: Arial, sans-serif; 
 }
 .email-signup h2 {
     color: white;
