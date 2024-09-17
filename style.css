@@ -257,9 +257,7 @@ video.spurpunk {
     background-color: transparent;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
-    margin-top: 20px;
+    box-shadow: none;
 }
 
 .email-signup h3 {
