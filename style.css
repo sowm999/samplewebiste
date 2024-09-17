@@ -254,7 +254,7 @@ video.spurpunk {
     transform: translateY(-70px); /* Adjust the jump distance */
 }
 .email-signup {
-    background-color: #f4f4f4;
+    background-color: transparent;
     padding: 20px;
     text-align: center;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
