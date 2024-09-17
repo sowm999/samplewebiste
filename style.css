@@ -288,3 +288,11 @@ video.spurpunk {
 .email-signup button:hover {
     background-color: #218838;
 }
+<body>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdH1S1rj89J9kFtbXQsM4C_hqGzG3k6Gi9TYsmqg/formResponse" method="POST" class="email-signup">
+        <h2>Sign Up</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="entry.1234567890" required>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
