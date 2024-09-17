@@ -253,21 +253,15 @@ video.spurpunk {
 .jump {
     transform: translateY(-70px); /* Adjust the jump distance */
 }
-.email-signup {
-    background-color: transparent;
-    padding: 20px;
-    text-align: center;
-    box-shadow: none;
-}
-
-.email-signup h3 {
+.email-signup h2 {
+    color: white;
+    font-size: 36px;
     margin-bottom: 10px;
-    font-size: 24px;
-    color: white;
 }
 
-.email-signup p {
+.email-signup label {
     color: white;
+    font-size: 18px;
 }
 
 .email-signup input[type="email"] {
