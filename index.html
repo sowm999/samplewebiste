@@ -160,23 +160,24 @@
 </body>
 
 <!-- Include JavaScript for interactions -->
-<script src="script.js"></script>
-    document.getElementById('emailForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // 防止表单默认提交
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // 防止表单默认提交
 
-    const email = document.querySelector('input[name="email"]').value;
+            const email = document.querySelector('input[name="email"]').value;
 
-    fetch('https://script.google.com/macros/s/AKfycbwFviTZCu_g6p2H3sFVZ5uWejG9UPbzecPuZrZxTwE0SGl0QjQ5zvjG0Cui-WKgC18c/exec.',  
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({ 'email': email }), 
-    })
-    .then(response => response.text())
-    .then(data => {
-      alert(data); // 显示返回的消息，例如 "Success"
-    })
-    .catch(error => {
-      console.error('Error:', error); // 错误处理
-    });
-  });
+            fetch('https://script.google.com/macros/s/AKfycbwFviTZCu_g6p2H3sFVZ5uWejG9UPbzecPuZrZxTwE0SGl0QjQ5zvjG0Cui-WKgC18c/exec', { 
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({ 'email': email }),
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data); // 显示返回的消息，例如 "Success"
+            })
+            .catch(error => {
+                console.error('Error:', error); // 错误处理
+            });
+        });
+    </script>
 </html>
