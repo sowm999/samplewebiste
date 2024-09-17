@@ -253,6 +253,9 @@ video.spurpunk {
 .jump {
     transform: translateY(-70px); /* Adjust the jump distance */
 }
+.email-signup {
+    text-align: center;  
+}
 .email-signup h2 {
     color: white;
     font-size: 36px;
