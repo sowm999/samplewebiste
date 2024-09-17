@@ -9,11 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap" rel="stylesheet">
+    <style>
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+        }
+        .social-links img {
+            width: 24px;  
+            height: 24px;  
+        }
+        .social-links .discord-link {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div >
+        <div>
             <div class="social-links">
                 <a href="https://www.facebook.com/share/3EAhHCFotsaRJABo/?mibextid=LQQJ4d" target="_blank">
                     <img src="icon/facebook.png" alt="Facebook" />
@@ -27,25 +48,23 @@
                 <a href="https://www.youtube.com/shorts/Jz9z0rK_YU4" target="_blank">
                     <img src="icon/youtube.png" alt="YouTube" />
                 </a>
+                <a href="https://discord.gg/b5CxQwYz" target="_blank" class="discord-link">
+                    Discord
+                </a>
             </div>
-            
         </div>
     </header>
+
     <div class="parallax-section" id="section1" align="center">
         <h1>SPURPUNK</h1>
-       
-           
-            <p class="subtitle">Come save the weird wild west!</p>
-            <img src="icon/c1.png"  alt="c1"style="
-            width:330px;
-           height: 440px;  ">
+        <p class="subtitle">Come save the weird wild west!</p>
+        <img src="icon/c1.png" alt="c1" style="width:330px; height: 440px;">
         <div class="video-container">
-         
             <video id="spurpunk-video" class="spurpunk" src="Spurpunk-animated-motion-video.mp4" width="800" height="600"></video>
         </div>
-        
         <p><a href="#" id="trailer-button" class="trailer-button">Watch Trailer</a></p>
     </div>
+
     <div class="jump-effect">
         <div class="content-section description">
             <p>A 3D tower defense game with a Western twist</p><br/>
