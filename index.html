@@ -161,25 +161,25 @@
 
 <!-- Include JavaScript for interactions -->
 <script>
-    document.getElementById('emailForm').addEventListener('submit', function(event) { 
+  document.getElementById('emailForm').addEventListener('submit', function(event) { 
     event.preventDefault();
 
     const email = document.querySelector('input[name="email"]').value;
 
-    fetch('https://script.google.com/macros/s/AKfycbwFviTZCu_g6p2H3sFVZ5uWejG9UPbzecPuZrZxTwE0SGl0QjQ5zvjG0Cui-WKgC18c/exec', {
-        method: 'POST',
-        headers: { 
-            'Content-Type': 'application/x-www-form-urlencoded' 
-        },
-        body: new URLSearchParams({ 'email': email }),
+    fetch('https://script.google.com/macros/s/AKfycbwVBnsPRuRy4ZS2zwFvTuk8vqP5cDcJepPsRuhWPekkyazAPNwbY06Tn9gbrszPgAER/exec', {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/x-www-form-urlencoded' 
+      },
+      body: new URLSearchParams({ 'email': email }),
     })
     .then(response => response.text())
     .then(data => {
-        alert(data);
+      alert(data);
     })
     .catch(error => {
-        console.error('Error:', error);
+      console.error('Error:', error);
     });
-});
+  });
 </script>
 </html>
