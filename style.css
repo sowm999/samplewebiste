@@ -254,7 +254,6 @@ video.spurpunk {
     transform: translateY(-70px); /* Adjust the jump distance */
 }
 .email-signup {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
