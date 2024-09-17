@@ -264,12 +264,10 @@ video.spurpunk {
     margin-bottom: 10px;
     font-size: 24px;
     color: white;
-    text-align: center;
 }
 
 .email-signup p {
     color: white;
-    text-align: center;
 }
 
 .email-signup input[type="email"] {
