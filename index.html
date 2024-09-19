@@ -160,26 +160,6 @@
 </body>
 
 <!-- Include JavaScript for interactions -->
-<script>
-  document.getElementById('emailForm').addEventListener('submit', function(event) { 
-    event.preventDefault();
-
-    const email = document.querySelector('input[name="email"]').value;
-
-    fetch('https://script.google.com/macros/s/AKfycbwVBnsPRuRy4ZS2zwFvTuk8vqP5cDcJepPsRuhWPekkyazAPNwbY06Tn9gbrszPgAER/exec', {
-      method: 'POST',
-      headers: { 
-        'Content-Type': 'application/x-www-form-urlencoded' 
-      },
-      body: new URLSearchParams({ 'email': email }),
-    })
-    .then(response => response.text())
-    .then(data => {
-      alert(data);
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-  });
-</script>
+<!-- Include JavaScript for interactions -->
+<script src="script.js"></script>
 </html>
